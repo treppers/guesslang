@@ -9,6 +9,7 @@ from tempfile import TemporaryDirectory
 from typing import Any, Callable, Dict, List, Tuple
 
 import tensorflow as tf
+from tensorflow.python.keras.utils.mode_keys import ModeKeys
 from tensorflow.python.trackable.autotrackable import AutoTrackable
 from tensorflow_estimator.python.estimator.estimator import Estimator
 
