@@ -1,17 +1,16 @@
 """Machine learning model"""
 
-from copy import deepcopy
 import logging
+import shutil
+from copy import deepcopy
 from operator import itemgetter
 from pathlib import Path
-import shutil
 from tempfile import TemporaryDirectory
-from typing import List, Tuple, Dict, Any, Callable
+from typing import Any, Callable, Dict, List, Tuple
 
 import tensorflow as tf
-from tensorflow.estimator import ModeKeys, Estimator
-from tensorflow.python.training.tracking.tracking import AutoTrackable
-
+from tensorflow.python.trackable.autotrackable import AutoTrackable
+from tensorflow_estimator.python.estimator.estimator import Estimator
 
 LOGGER = logging.getLogger(__name__)
 
